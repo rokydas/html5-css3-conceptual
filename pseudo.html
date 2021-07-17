@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+    <style>
+        li:nth-child(5) {
+            color: brown;
+            border: 5px solid #008080;
+            padding: 10px;
+        }
+
+        li:hover{
+            color: brown;
+            font-size: 20px;
+        }
+
+        button {
+            padding: 10px 30px;
+            background-color: teal;
+            border: none;
+            border-radius: 10px;
+            color: white;
+        }
+
+        button:hover {
+            color: teal;
+            background-color: white;
+            border: 2px solid teal;
+        }
+
+        input {
+            margin-top: 20px;
+            padding: 5px 15px;
+            border-radius: 5px;
+            border: 1px solid gray;
+            outline: none;
+        }
+
+        input:focus {
+            border: 5px solid slateblue;
+            color: tomato;
+        }
+
+        a {
+            font-size: 3em;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: blue;
+        }
+
+        li::before {
+            content: "Hello ";
+        }
+
+        li::after {
+            content: " Hi";
+        }
+
+    </style>
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="audio.html">Audio</a></li>
+            <li><a href="position.html">Position</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="pseudo.html">Pseudo</a></li>
+            <li><a href="semantic.html">Semantic</a></li>
+            <li><a href="table.html">Table</a></li>
+        </ul>
+    </nav>
+    <ul>
+        <li>list-1</li>
+        <li>list-2</li>
+        <li>list-3</li>
+        <li>list-4</li>
+        <li>list-5</li>
+        <li>list-6</li>
+        <li>list-7</li>
+    </ul>
+    <button>Hire me</button>
+    <form action="">
+        <input type="text" placeholder="Your name">
+    </form>
+    <a href="https://google.com">Google</a>
+</body>
+</html>
